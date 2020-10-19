@@ -1,3 +1,3 @@
 # Forecaster
 
-https://forecastpom.herokuapp.com/
+https://forecasterpom.herokuapp.com/
