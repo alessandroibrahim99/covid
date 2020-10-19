@@ -1,3 +1,3 @@
-# CoronaVirus Forecast
+# Forecaster
 
-https://virusforecaster.herokuapp.com/
+https://forecastpom.herokuapp.com/
