@@ -4,7 +4,7 @@ import os
 
 
 ## App settings
-name = "Virus Forecaster"
+name = "Forecaster"
 
 host = "0.0.0.0"
 
@@ -12,9 +12,9 @@ port = int(os.environ.get("PORT", 5000))
 
 debug = False
 
-contacts = "https://www.linkedin.com/in/mauro-di-pietro-56a1366b/"
+contacts = "https://www.linkedin.com/in/alessandro-ibrahim-b24640a/"
 
-code = "https://github.com/mdipietro09/App_VirusForecaster"
+code = "https://github.com/alessandroibrahim99/forecaster"
 
 fontawesome = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
 
