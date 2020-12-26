@@ -31,18 +31,22 @@ app.title = config.name
 # Navbar
 navbar = dbc.Nav(className="nav nav-pills", children=[
     ## logo/home
-    dbc.NavItem(html.Img(src=app.get_asset_url("logo.PNG"), height="40px")),
+    #dbc.NavItem(html.Img(src=app.get_asset_url("logo.PNG"), height="40px")),
+    dbc.NavItem(html.Img(src=app.get_asset_url("logo2.png"), height="40px")),
     ## about
     dbc.NavItem(html.Div([
-        dbc.NavLink("About", href="/", id="about-popover", active=False),
+        dbc.NavLink("Developed by itforecasts.com", href=config.code,  target="_blank"),
+        #dbc.NavLink("Developed by itforecasts.com", href="/", id="about-popover", active=False),
         dbc.Popover(id="about", is_open=False, target="about-popover", children=[
-            dbc.PopoverHeader("How it works"), dbc.PopoverBody(about.txt)
+        #dbc.Popover(id="about", is_open=False, target="www.itforecasts.com", children=[
+            #dbc.PopoverHeader("www.itforecasts.com"), dbc.PopoverBody(about.txt)
+            dbc.NavLink("www.itforecasts.com"), dbc.PopoverBody(about.txt)
         ])
     ])),
     ## links
     dbc.DropdownMenu(label="Links", nav=True, children=[
         dbc.DropdownMenuItem([html.I(className="fa fa-linkedin"), "  Contacts"], href=config.contacts, target="_blank"), 
-        dbc.DropdownMenuItem([html.I(className="fa fa-github"), "  Code"], href=config.code, target="_blank")
+        dbc.DropdownMenuItem([html.I(className="fa fa-github"), "  Website"], href=config.code, target="_blank")
     ])
 ])
 
